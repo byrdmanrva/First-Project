@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)file:///Users/cast/Desktop/second%20desgin%20project-1%202/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Meal&amp;Drink</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- style css -->
+  <link rel="stylesheet" type="text/css" media="screen" href="./Meal&amp;Drink_files/reset.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="./Meal&amp;Drink_files/style.css">
+
+  <!-- Bootstrap Stylesheet -->
+  <link rel="stylesheet" href="./Meal&amp;Drink_files/bootstrap.min.css">
+
+  <!-- CSS animation library -->
+  <link rel="stylesheet" href="./Meal&amp;Drink_files/animate.min.css">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="./Meal&amp;Drink_files/materialize.min.css">
+  <link href="./Meal&amp;Drink_files/icon" rel="stylesheet">
+  <script src="./Meal&amp;Drink_files/materialize.min.js"></script>
+
+  <!-- google font -->
+  <link href="./Meal&amp;Drink_files/css" rel="stylesheet">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="./Meal&amp;Drink_files/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="shortcut icon" href="file:///Users/cast/Desktop/second%20desgin%20project-1%202/assets/images/img.png" type="image">
+</head>
+
+
+
+
+
+
+
+
+
+
+
+<body class="keyboard-focused">
+  <!-- mp4 background -->
+  <video autoplay="" muted="" loop="" id="food-video" style="display: none;">
+    <source src="assets/images/fire3.mp4" type="video/mp4">
+  </video>
+
+  <video autoplay="" muted="" loop="" id="drink-video" style="margin-bottom: -60px; display: block;">
+    <source src="assets/images/water.mp4" type="video/mp4">
+  </video>
+
+  <div class="background">
+
+    <div class="all">
+    <!-- jumbotron -->
+    <!-- <div class="jumbotron jumbotron-fluid" id="jumbo">
+      <div class="container">
+        <h1 class="display-4 wow flash" data-wow-delay="4s" data-wow-iteration="4">Meal & Drink</h1>
+        <p class="lead wow bounceInLeft" data-wow-delay="5s">
+          This is a modified jumbotron that occupies the entire horizontal space
+          of its parent.
+        </p>
+      </div>
+    </div> -->
+
+
+
+    <!-- sample list -->
+    <div class="row">
+      <div class="col-sm-12 sample-list">
+        <span class="sample-food">
+          <img src="./Meal&amp;Drink_files/00.jpg" alt="food" class="sample wow zoomInDown" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-name: zoomInDown;">
+          <img src="./Meal&amp;Drink_files/05.jpg" alt="food" class="sample wow zoomInDown" data-wow-duration="2.5s" style="visibility: visible; animation-duration: 2.5s; animation-name: zoomInDown;">
+          <img src="./Meal&amp;Drink_files/02.jpg" alt="food" class="sample wow zoomInDown" data-wow-duration="3s" style="visibility: visible; animation-duration: 3s; animation-name: zoomInDown;">
+          <img src="./Meal&amp;Drink_files/03.jpg" alt="food" class="sample wow zoomInDown" data-wow-duration="3.5s" style="visibility: visible; animation-duration: 3.5s; animation-name: zoomInDown;">
+          <img src="./Meal&amp;Drink_files/04.jpg" alt="food" class="sample wow zoomInDown" data-wow-duration="4s" style="visibility: visible; animation-duration: 4s; animation-name: zoomInDown;">
+        </span>
+
+        <span class="sample-drink">
+          <img src="./Meal&amp;Drink_files/12.jpg" alt="drink" class="sample wow zoomInDown" data-wow-duration="4.5s" style="visibility: visible; animation-duration: 4.5s; animation-name: zoomInDown;">
+          <img src="./Meal&amp;Drink_files/13.jpg" alt="drink" class="sample wow zoomInDown" data-wow-duration="5s" style="visibility: visible; animation-duration: 5s; animation-name: zoomInDown;">
+          <img src="./Meal&amp;Drink_files/14.jpg" alt="drink" class="sample wow zoomInDown animated" data-wow-duration="5.5s" style="visibility: visible; animation-duration: 5.5s; animation-name: zoomInDown;">
+          <img src="./Meal&amp;Drink_files/15.jpg" alt="drink" class="sample wow zoomInDown animated" data-wow-duration="6s" style="visibility: visible; animation-duration: 6s; animation-name: zoomInDown;">
+          <img src="./Meal&amp;Drink_files/16.jpg" alt="drink" class="sample wow zoomInDown animated" data-wow-duration="6.5s" style="visibility: visible; animation-duration: 6.5s; animation-name: zoomInDown;">
+        </span>
+        <br>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <!--=============== left ===============-->
+      <div class="col-sm-6 content" id="left-side">
+        <!-- food search - random - home buttons -->
+        <div id="left-default" style="display: none;">
+          <h5> meal <i class="fas fa-utensils"></i></h5>
+          <form class="input-group mb-3 form-set">
+            <input type="text" name="search-term" placeholder="Meal Name" class="drink-search-input" id="food-search">
+            <input type="submit" value="Go" class="btn search-button transparent" id="food-search-button">
+          </form>
+          <button type="button" class="btn waves-effect waves-light random-button" id="food-random-button">Random<i class="fas fa-dice"></i></button>
+          &nbsp;&nbsp;&nbsp;
+          <button type="button" class="btn waves-effect waves-light home-button" id="back-button">Go Back <i class="fas fa-undo-alt"></i></button>
+
+
+        </div>
+
+        <!-- when click "DRINK(right side)", show information here!!! -->
+        <div class="results" id="drink-results"><h4>Drink: The Jimmy Conway</h4><br><br> Glass type: Whiskey sour glass<br> Instructions: <br> Fill glass with ice
+Pour in The Irishman and Disaronno
+Fill to the top with Cranberry Juice
+Garnish with a slice of lemon…Enjoy!<br><br> Ingredients:<br>50 mlIrish Whiskey<br>50 mlAmaretto<br>4 ozCranberry Juice<br></div>
+
+        <!-- when click search: show Meal photo and video-->
+        <img class="results" id="food-photo" src="./Meal&amp;Drink_files/index.html" alt="">
+      </div>
+
+      <!--=============== right ===============-->
+      <div class="col-sm-6 content" id="right-side">
+        <div id="right-default">
+          <h5> drink<i class="fas fa-cocktail"></i></h5>
+          <form class="form-set input-group mb-3">
+            <input type="text" name="search-term" placeholder="Drink Name" class="drink-search-input" id="drink-search">
+            <input type="submit" value="Go" class="btn search-button transparent" id="drink-search-button">
+          </form>
+          <button type="button" class="btn waves-effect waves-light random-button" id="drink-random-button">Random<i class="fas fa-dice"></i></button>
+          &nbsp;&nbsp;&nbsp;
+          <button type="button" class="btn waves-effect waves-light home-button" id="back-button">Go Back <i class="fas fa-undo-alt"></i></button>
+        </div>
+
+        <!-- when click "FOOD(left side)", show information here!!! -->
+        <div class="results" id="food-results"></div>
+        <!--  when click search: show photo and video of drink -->
+        <img class="results" id="drink-photo" src="./Meal&amp;Drink_files/wbcvyo1535794478.jpg" alt="">
+      </div>
+    </div>
+
+
+
+
+
+
+    <footer>
+      <!-- <div class="row"> -->
+        <!-- <div class="down"> -->
+          <ul class="animated  bounceInLeft foot-references">
+            <h6>Reference</h6>
+            <li>TheCockTailDB API</li>
+            <li>MealDB API</li>
+          </ul>
+          
+          <div class="switch-video"></div>
+
+          <div class="video-play"></div>
+
+          <ul class="animated  bounceInRight foot-contacts">
+            <h6>The Expert Coders ©</h6>
+            <li>Abdullah Alamri</li>
+            <li>James Lamb</li>
+            <li>David Byrd</li>
+            <li>Isaac Wu</li>
+          </ul>
+        </footer></div>
+      <!-- </div> -->
+
+      <!-- <div class="row">
+        <div class="col-sm-12">
+          <div class="cp-right">Copyright &copy; 2018 The Expert Coders</div>
+        </div>
+      </div> -->
+    
+  </div>  
+
+  <!-- ============================ Links =============================== -->
+  <!-- Link and activate WOW.js -->
+  <script src="./Meal&amp;Drink_files/wow.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+  <!-- jquery & javascript -->
+  <script src="./Meal&amp;Drink_files/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="./Meal&amp;Drink_files/js.js"></script>
+
+  <!-- firebase -->
+  <script src="./Meal&amp;Drink_files/firebase.js"></script>
+
+
+</body></html>
